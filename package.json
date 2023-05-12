@@ -1,0 +1,33 @@
+{
+  "name": "challenge-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --collect-coverage",
+    "test:watch": "jest ---watchAll",
+    "prepare": "husky install",
+    "build": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "jest": "^29.5.0",
+    "jest-ts-webcompat-resolver": "^1.0.0",
+    "ts-jest": "^29.1.0"
+  },
+  "prettier": "singleQuote",
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
